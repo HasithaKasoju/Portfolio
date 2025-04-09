@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasitha Kasoju - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #6366f1, #4f46e5);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .btn {
+      background: white;
+      color: #4f46e5;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e0e7ff;
+    }
+
+    header {
+      background: var(--card);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--card);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--bg);
+      padding-bottom: 0.5rem;
+    }
+
+    .project, .edu-item {
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skills span {
+      background: var(--bg);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--card);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>👋 Hey there! I'm Hasitha Kasoju</h1>
+    <p class="tagline">A tech enthusiast exploring data science, robotics & full-stack development.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </div>
+</section>
+
+<!-- Header -->
+<header>
+  <h2>Welcome to My Portfolio</h2>
+  <p>Email: <a href="mailto:kasojuhasitha@gmail.com">kasojuhasitha@gmail.com</a> |
+     <a href="https://github.com/HasithaKasoju" target="_blank">GitHub</a> |
+     Phone: 9347142824</p>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+
+  <section>
+    <h2>Objective</h2>
+    <p>“It is not the strongest of the species that survive, nor the intelligent, but the one who is most responsive to change.”</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-item"><strong>B.Tech - CSE (Data Science)</strong><br/>
+      Keshav Memorial Institute of Technology, Hyderabad<br/>
+      <em>2022–2025</em> | CGPA: 8.6/10</div>
+    <div class="edu-item"><strong>Intermediate (MPC)</strong><br/>
+      Narayana Junior College, Hyderabad<br/>
+      <em>2019–2021</em> | CGPA: 9.6/10</div>
+    <div class="edu-item"><strong>SSC</strong><br/>
+      K K Reddy High School, Telangana<br/>
+      <em>2018–2019</em> | CGPA: 9.8/10</div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>Exam Seating Arrangement</strong> – Java, MySQL<br/>
+      Java app to manage exam seating; used JDBC and MySQL integration.
+    </div>
+    <div class="project">
+      <strong>Autonomous Weed Removal Robot</strong> – Flask, Python, MySQL, Arduino<br/>
+      Built a smart robot with Flask backend, HTML/JS frontend, MySQL DB & Arduino control.
+    </div>
+    <div class="project">
+      <strong>Fast-Track</strong> – JavaScript, HTML, CSS<br/>
+      Map-based TSP route finder. 
+      <a href="https://track-fast-track.netlify.app" target="_blank">View App</a>
+    </div>
+    <div class="project">
+      <strong>Elevator Simulation System</strong> – JavaScript, HTML, CSS<br/>
+      Simulated elevator with SCAN Disk Algorithm handling.
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>Python</span>
+      <span>HTML</span>
+      <span>JavaScript</span>
+      <span>Node.js</span>
+      <span>MySQL</span>
+      <span>Problem Solving</span>
+      <span>Algorithms</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <p><strong>Python for Data Science, AI & Development</strong> – Coursera (IBM)<br/>
+    <a href="https://coursera.org/share/c406e9b6dca19cd3e55f15e2f43074cc" target="_blank">Click to View Certificate</a></p>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  &copy; 2025 Hasitha Kasoju. Designed with ❤️
+</div>
+
+</body>
+</html>
